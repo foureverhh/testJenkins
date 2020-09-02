@@ -8,4 +8,10 @@ pipeline{
       }
     }
   }
+    stage ('test'){
+      steps {
+        echo 'Test ....'
+        sh 'mvn --version'
+      }
+    }
 }
